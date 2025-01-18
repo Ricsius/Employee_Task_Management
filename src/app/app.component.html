@@ -11,4 +11,6 @@
             />
         </li>
     </ul>
+
+    <app-tasks *ngIf="selectedUser" [name]="selectedUser.name"></app-tasks>
 </main>
