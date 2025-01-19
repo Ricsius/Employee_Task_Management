@@ -9,6 +9,7 @@ import { UserData } from './user.model';
 })
 export class UserComponent {
   user = input.required<UserData>();
+  selected = input<boolean>(false);
   select = output<string>();
 
   imagePath = computed(() => 'assets/users/' + this.user().avatar);
